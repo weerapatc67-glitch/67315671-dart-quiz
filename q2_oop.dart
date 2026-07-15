@@ -5,4 +5,17 @@ abstract class MenuItem {
   void price() {
     return basePrice;
   }
+
+  void show() {
+    print('$name$price');
+  }
+  class Drink extends Menuitem {
+  String? topping;
+  print('basePrice + (10 × toppings'));
+
+  void displaySchoolInfo() {
+    print("โรงเรียน: $schoolName");
+  }
+}
+
 }
