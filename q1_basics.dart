@@ -34,7 +34,8 @@ void main() {
   double calcTotal(int price, int qty, [double discount = 0]) {
     return (price * qty - discount) * (1 + vatRate);
   }
-
+  print('---');
+  
   print('ยอดสุทธิ (ไม่มีส่วนลด): ${calcTotal(55, 2)} บาท');
   print('ยอดสุทธิ (ส่วนลด10บาท): ${calcTotal(55, 2, 10)} บาท');
 
