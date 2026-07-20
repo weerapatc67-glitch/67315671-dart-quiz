@@ -32,8 +32,7 @@ class Food extends MenuItem {
 
   Food(String name, double basePrice, this.size)
       : super(name, basePrice);               
-
-                                    
+                                  
   double price() {
     Map<String, double> multiplier = {        
       'S': 1.0,
